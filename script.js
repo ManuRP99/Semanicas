@@ -15,12 +15,10 @@ const dd = document.getElementById('dia');
 function updateClock() {
 	const currDate = new Date();
 	const date = currDate.getDate();
-	console.log(date);
 	const seconds = currDate.getSeconds();
 	const minutes = currDate.getMinutes();
 	const hours = currDate.getHours();
 	const days = currDate.getDay();
-	console.log(days);
 	const week = Math.ceil((date - 1 - days) / 7);
 
 	hh.innerText = hours;
